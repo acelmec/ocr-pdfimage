@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  pdf-text-api:
+    image: acelmec/ocr-pdfimage:latest
+    ports:
+      - "8080:5000"     # Altere 8080 para a porta que quiser no host
+    environment:
+      - API_KEY=XwJKCzj9vvMFe86FzpL9luiaQwfIvLon
+      - PORT=5000
+    restart: unless-stopped
