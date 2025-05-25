@@ -8,4 +8,6 @@ services:
     environment:
       - API_KEY=XwJKCzj9vvMFe86FzpL9luiaQwfIvLon
       - PORT=5000
+    networks:
+      - minha_rede ## Nome da rede interna
     restart: unless-stopped
